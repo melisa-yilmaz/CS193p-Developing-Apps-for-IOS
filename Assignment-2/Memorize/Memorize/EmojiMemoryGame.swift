@@ -66,6 +66,27 @@ class EmojiMemoryGame: ObservableObject { // publish to all the changes to the V
     var score: Int {
          model.score;
     }
+    var themeName: String {
+        theme!.name
+    }
+    
+    var themeColor: Color {
+        switch theme!.colorOfTheme {
+        case "cyan":
+            return .cyan
+        case "brown":
+            return .brown
+        case "orange":
+            return .orange
+        case "yellow":
+            return .yellow
+        case "teal":
+            return .yellow
+        default:
+            return .blue
+        }
+    }
+    
     
     
     //MARK: -Intent(s)
@@ -76,7 +97,7 @@ class EmojiMemoryGame: ObservableObject { // publish to all the changes to the V
     
     func createNewGame () {
         objectWillChange.send() // after making ViewModel as ObservableObject, do it
-        self.theme = themes.randomElement()!
-        model = EmojiMemoryGame.createMemoryGame(theme: self.theme!)
+        theme = themes.randomElement()!
+        model = EmojiMemoryGame.createMemoryGame(theme: theme!)
     }
 }

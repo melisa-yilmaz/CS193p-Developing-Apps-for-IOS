@@ -20,7 +20,7 @@ struct ContentView: View {
             
         VStack {
             HStack {
-                Text(viewModel.theme!.name).bold()
+                Text(viewModel.themeName).bold()
                 Spacer()
                 VStack {
                     Text("Score").bold()
@@ -41,7 +41,7 @@ struct ContentView: View {
                             }
                     })
                 }
-                .foregroundColor(viewModel.theme!.colorOfTheme)
+                .foregroundColor(viewModel.themeColor)
             }
            
                 Button{
@@ -49,7 +49,7 @@ struct ContentView: View {
                     
                 } label: {
                     Text("New Game").bold()
-                }.foregroundColor(viewModel.theme!.colorOfTheme)
+                }.foregroundColor(viewModel.themeColor)
             
 
         }.padding(.horizontal)

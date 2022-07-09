@@ -6,13 +6,12 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct Theme {
     var name: String
     var emojis: Array<String>
     var numberOfPairs: Int?
-    var colorOfTheme: Color
+    var colorOfTheme: String
     
 }
 
@@ -21,39 +20,39 @@ var themes: [Theme] = [
         name:"Foods",
         emojis: ["🥦","🥑","🫐","🍠"],
         numberOfPairs: 47,
-        colorOfTheme: Color.orange
+        colorOfTheme: "orange"
         
     ),
     Theme(
         name:"Animals",
         emojis: ["🐶","🦋","🦅","🐣","🐠","🦭"],
         numberOfPairs: 8,
-        colorOfTheme: Color.cyan
+        colorOfTheme: "cyan"
         
     ),
     Theme(
         name:"Flags",
         emojis: ["🇧🇧","🇧🇾","🇦🇿","🇨🇨","🇩🇰","🇬🇫","🇧🇮","🇨🇩","🇨🇮","🇨🇲","🇸🇿"],
-        colorOfTheme: Color.green
+        colorOfTheme: "green"
         
     ),
     Theme(
         name:"Drinks",
         emojis: ["🥛","🧉","🍺","🍷","🍵","🍹","🍸","🧋","☕️","🧃","🥤","🥂","🍶"],
-        colorOfTheme: Color.brown
+        colorOfTheme: "brown"
         
     ),
     Theme(
         name:"Activities",
         emojis: ["⛷","🏋🏼‍♀️","⛹🏻‍♀️","🤸🏾‍♀️","🤼‍♀️","🏄🏿","🏊🏻‍♀️","🧗🏽‍♀️","🚴🏼‍♂️","🚵🏼","🤺","🚣🏽‍♀️","🧘🏼","🏇🏼","🤽🏻‍♀️","🤾🏼‍♀️"],
-        colorOfTheme: Color.teal
+        colorOfTheme: "teal"
         
     ),
     Theme(
         name:"Jobs",
         emojis: ["👮🏻‍♀️","👩🏼‍🍳","👩🏽‍🏭","👩🏿‍💻","👨🏼‍🎨","👩🏽‍🚒","🥷🏼","👨🏻‍🚀","👨🏿‍🔬","👩🏻‍🌾","👷🏼‍♀️","👩🏾‍🏫","🧑🏽‍⚕️","🧑🏻‍🏭","👩🏼‍🔬"],
         numberOfPairs: 8,
-        colorOfTheme: Color.yellow
+        colorOfTheme: "yellow"
         
     ),
 ]
